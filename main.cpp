@@ -42,6 +42,7 @@ int main()
 
     //Find Intercepts if Distance > R
     //If theta > 0, two intersect, if = 0, tangent, if < 0, no intersect
+    //Basically reverse engineering the substitution method to find exact point location using circle and line formula.
   
     theta = (pow(circler, 2)) * (1 + pow(slope, 2)) - pow((circley - slope * circlex - D), 2);
     if( theta > 0) {
